@@ -127,7 +127,7 @@ a:hover, a:focus {
 }
 
 .btn-primary {
-  background-color:#70cbce;
+  background-color:#fc9067;
   color: #ffffff;
 }
 
@@ -203,7 +203,7 @@ a:hover, a:focus {
 }
 
 .blue {
-  color: #70cbce;
+  color: #fc9067;
 }
 
 .white {
@@ -215,7 +215,7 @@ a:hover, a:focus {
 }
 
 .blue-bg {
-  background: #70cbce;
+  background: #fc9067;
 }
 
 .white-bg {
@@ -274,6 +274,7 @@ a:hover, a:focus {
 }
 
 .logo img {
+
 }
 
 
@@ -282,7 +283,7 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-  background: url(../img/mtp.jpg) no-repeat center center;
+  background: url(../img/mtp2.jpg) no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
@@ -457,7 +458,7 @@ footer {
 
 
 #pricing {
-  background: #70cbce;
+  background: #fc9067;
 }
 
 .pricing-container {
@@ -555,7 +556,7 @@ footer {
 }
 
 .features.last a {
-	color: #70cbce;
+	color: #fc9067;
 	font-size: 14px;
 	letter-spacing: 1px;
 }
