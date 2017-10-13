@@ -146,10 +146,29 @@
 
                 <h3 class="black">Restez au courant !</h2>
 
-                <form role="form"  style="margin-top: 20px;" >
-                <div class="col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 ">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Votre email">
-                </div>
+
+                <form method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+
+                  <div id="mc_embed_signup1" class="col-xs-12 col-sm-6 col-sm-offset-1 ">
+                      <div id="mc_embed_signup_scroll">
+                        <input type="email" value="" name="EMAIL" class="email form-control" id="mc-email" placeholder="Votre email" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                          <input type="text" name="b_bc52bec3c758ad9f9e5b5bce7_d9ed0e9aab" tabindex="-1" value="">
+                        </div>
+                      </div>
+                  </div>
+
+
+                  <div id="mc_embed_signup2" class="col-xs-12 col-sm-4 ">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                  </div>
+
+                  <div id="result" class="col-xs-12 col-sm-10 col-sm-offset-1" style="display:none;"></div>
+
+                </form>
+
+                <!--End mc_embed_signup-->
               </div><!--End Form row-->
             </form>
           </div>
@@ -180,10 +199,10 @@
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.ajaxchimp.js"></script>
     <script src="js/main.js"></script>
 
 

@@ -606,34 +606,32 @@ footer {
 }
 
 
-
+#mc_embed_signup2 {
+  margin-top: 20px;
+}
 
 /* ==========================================================================
    Mobile styles
    ========================================================================== */
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-.btn-lg {
-  font-size: 12.5px;
-  line-height: 1.33;
-  padding: 16px 13px;
-  letter-spacing: 0px;
-}
-
-
-.btn-wide {
-  width: 100%;
-  font-size: 12.5px;
-  line-height: 1.33;
-  padding: 16px 13px;
-  letter-spacing: 0px;
-}
-
-#be-the-first {
+  .btn-lg {
+    font-size: 12.5px;
+    line-height: 1.33;
+    padding: 16px 13px;
+    letter-spacing: 0px;
+  }
+  .btn-wide {
+    width: 100%;
+    font-size: 12.5px;
+    line-height: 1.33;
+    padding: 16px 13px;
+    letter-spacing: 0px;
+  }
+  #be-the-first {
       background-attachment: scroll;
   }
-
 }
 
 
@@ -653,6 +651,16 @@ footer {
 #be-the-first {
       background-attachment: scroll;
   }
+
+}
+
+/* desktop */
+@media (min-width: 768px) {
+
+#mc_embed_signup2 {
+  margin-top: 0;
+}
+
 
 }
 

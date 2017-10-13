@@ -40,6 +40,50 @@ $(document).ready(function(){
       );
       wow.init();
 
+  //------------------------------------//
+  // Mailchimp subsribe
+  //------------------------------------// 
+
+  $('#mc-embedded-subscribe-form').ajaxChimp({
+    url: 'https://sunny-tech.us16.list-manage.com/subscribe/post?u=bc52bec3c758ad9f9e5b5bce7&id=d9ed0e9aab',
+    callback: (message) => {
+      console.log(message)
+      var text = ""
+      if(message.msg.startsWith('0 -')){
+        text = message.msg.substring(3)
+      } else {
+        text = message.msg
+      }
+      if($("#result").text().length > 1){
+        $("#result").fadeOut(400, function() {
+          $("#result").text(text).fadeIn();
+        })
+      } else {
+          $("#result").text(text).fadeIn();
+      }
+    }
+  });
+
+
+
+  function register($form) {
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+        success     : function(data) {
+            if (data.result != "success") {
+                // Something went wrong, do something to notify the user. maybe alert(data.msg);
+            } else {
+                // It worked, carry on...
+            }
+        }
+    });
+}
 
 	
 });
