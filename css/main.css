@@ -314,6 +314,10 @@ header {
   font-size: 25px;
 }
 
+.link {
+  display: inline-block !important;
+}
+
 
 .mouse-icon {
     border: 2px solid #fff;
