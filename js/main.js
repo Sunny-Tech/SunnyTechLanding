@@ -59,31 +59,15 @@ $(document).ready(function(){
           $("#result").text(text).fadeIn();
         })
       } else {
-          $("#result").text(text).fadeIn();
+        $("#result").text(text).fadeIn();
       }
     }
   });
 
+  $('#mc-email').keyup(function(e){
+    if(e.keyCode == 13) {
+      $('#mc-embedded-subscribe-form').submit()
+    }
+  });
 
-
-  function register($form) {
-    $.ajax({
-        type: $form.attr('method'),
-        url: $form.attr('action'),
-        data: $form.serialize(),
-        cache       : false,
-        dataType    : 'json',
-        contentType: "application/json; charset=utf-8",
-        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
-        success     : function(data) {
-            if (data.result != "success") {
-                // Something went wrong, do something to notify the user. maybe alert(data.msg);
-            } else {
-                // It worked, carry on...
-            }
-        }
-    });
-}
-
-	
 });
