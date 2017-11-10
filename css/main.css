@@ -11,12 +11,13 @@
 /* ==========================================================================
    Global styles
    ========================================================================== */
+
 h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 p, .lead {
-	font-family: 'Raleway', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 h1 {
@@ -45,9 +46,7 @@ h3 {
 
 .lead {
   font-size: 21px;
-  line-height: 26px;
   color: #ffffff;
-  font-weight: 400;
 }
 
 p {
@@ -105,9 +104,10 @@ a:hover, a:focus {
 .btn-lg {
   font-size: 13px;
   line-height: 1.33;
-  padding: 22px 30px;
+  padding: 12px 15px;
   font-weight: 400;
   letter-spacing: 1px;
+  margin-left: -30px;
 }
 
 .btn-sm {
@@ -279,12 +279,12 @@ a:hover, a:focus {
 /* ==========================================================================
    Main styles
    ========================================================================== */
-header {
-  background: url(../img/img3.jpg) no-repeat center center;
+body {
+  background: url(../img/background.jpg) no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  min-height: 100vh;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -292,10 +292,8 @@ header {
 }
 
 .header-info {
-  position: absolute;
+  position: relative;
   width: 100%;
-  left: 0;
-  right: 0;
   margin-left: 0px;
   margin-top: 3%;
 }
@@ -305,13 +303,31 @@ header {
 }
 
 .main-logo {
-  margin-top: -50px;
-  filter: drop-shadow(0px 0px 14px rgba(255,255,255, 0.6));
+  width: 220px;
+  max-width: 100%;
+  margin-bottom: 40px;
 }
 
-.value-proposition {
+.value-proposition.lead {
   margin-top:10px;
   font-size: 25px;
+  color: #4A4A4A;
+}
+
+
+.value-proposition.lead1 {
+  font-family: 'Barlow';
+  font-weight: 600;
+  margin-top:10px;
+  font-size: 40px;
+}
+
+.value-proposition.sea {
+  font-family: 'Barlow Semi Condensed';
+  font-weight: 600;
+  margin-top:10px;
+  font-size: 25px;
+  color: #F55A56;
 }
 
 .link {
@@ -378,17 +394,6 @@ header {
 	padding: 30px 0px;
 }
 
-
-
-#be-the-first {
-  background: url(../img/be-the-first-bg.jpg) #231f20 no-repeat center center fixed;
-  min-height: 300px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 hr.line {
 	width: 100%;
 	border: 2px solid;
@@ -443,8 +448,6 @@ hr.line {
   margin: auto;
 }
 
-
-
 .news-container {
   padding: 10px 0px 20px;
   border-bottom: 1px dotted #d9d9d9;
@@ -467,9 +470,7 @@ footer {
   background: #fc9067;
 }
 
-
 /*---------------Pricing Tables-------------------*/
-
 
 #pricing {
   background: #fc9067;
@@ -519,29 +520,6 @@ footer {
   border-top-right-radius: 10px;
 }
 
-.price {
-    background: none repeat scroll 0 0 #231f20;
-    color: #FFFFFF;
-    font-size: 32px;
-    font-weight: bold;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-
-.pricing-table:hover li.price  {
-  background: #303236;
-  -webkit-transition: all 0.85s ease-in-out;
-  -moz-transition: all 0.85s ease-in-out;
-  -o-transition: all 0.85s ease-in-out;
-  transition: all 0.85s ease-in-out;
-}
-
-.price small {
-  font-weight: 300;
-  color: #929496;
-}
-
 .info {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -549,34 +527,6 @@ footer {
   font-size: 13px;
   color: #929496;
   background: #ffffff;
-}
-
-.features {
-  color: #231f20;
-  font-weight: bold;
-  padding-top: 12px;
-  padding-bottom: 15px;
-  border-bottom: 1px dotted #E8EAEA;
-  background: #ffffff
-}
-
-.features.first {
-  border-top: 1px dotted #E8EAEA;
-}
-
-.features.last {
-  padding-top: 17px;
-  padding-bottom: 20px;
-}
-
-.features.last a {
-	color: #fc9067;
-	font-size: 14px;
-	letter-spacing: 1px;
-}
-
-.pricing-container .btn {
-    border-radius: 0;
 }
 
 #result {
@@ -591,12 +541,12 @@ footer {
     background-color: #FFFFFF;
     background-image: none;
     border: 0px solid transparent;
-    border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     color: #929496;
     display: block;
     font-size: 15px;
-    height: 60px;
+    height: 40px;
+    width: 100%;
     line-height: 1.42857;
     padding: 6px 12px;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
@@ -620,7 +570,6 @@ footer {
     opacity: 1;
 }
 
-
 #mc_embed_signup2 {
   margin-top: 20px;
 }
@@ -631,70 +580,10 @@ footer {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .btn-lg {
-    font-size: 12.5px;
-    line-height: 1.33;
-    padding: 16px 13px;
-    letter-spacing: 0px;
-  }
-  .btn-wide {
-    width: 100%;
-    font-size: 12.5px;
-    line-height: 1.33;
-    padding: 16px 13px;
-    letter-spacing: 0px;
-  }
-  #be-the-first {
-      background-attachment: scroll;
-  }
+  .btn-lg { margin-left: 0; width: 100%; }
 }
-
-
-/* Landscape phone to portrait tablet */
-@media (min-width: 481px) and (max-width: 767px) {
-
-#be-the-first {
-      background-attachment: scroll;
-  }
-
+/* Landscape phones and down */
+@media (min-width: 480px) and (max-width: 786px) {
+  .btn-lg { margin-left: 0; }
+  .form-control { width: auto; margin: 0 auto; }
 }
-
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 991px) {
-
-#be-the-first {
-      background-attachment: scroll;
-  }
-
-}
-
-/* desktop */
-@media (min-width: 768px) {
-
-#mc_embed_signup2 {
-  margin-top: 0;
-}
-
-
-}
-
-
-
-/* Desktops and laptops ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-
-
-/* Large screens ----------- */
-@media (min-width: 1200px) and (max-width: 3000px) {
-
-}
-
-
-
-
-
-.main-logo { max-width: 500px; width:100%; }

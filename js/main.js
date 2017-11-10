@@ -70,4 +70,10 @@ $(document).ready(function(){
     }
   });
 
+
+  var userLang = navigator.language || navigator.userLanguage; 
+  if(userLang !== 'fr'){
+    window.lang.change('en')
+  }
+
 });
