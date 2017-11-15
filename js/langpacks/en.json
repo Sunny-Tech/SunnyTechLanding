@@ -2,21 +2,6 @@
 	"token": {
         "value-proposition":"A quality conference for tech enthusiasts",
         "conf-date":"28-29 June 2018, Montpellier ☀️",
-        "more-info":"learn more",
-        "contact":"Contact",
-        "conf":"Conference",
-        "conf-text":"TODO",
-        "workshop":"Workshop",
-        "workshop-text":"TODO",
-        "party":"Party",
-        "party-text":"TODO",
-        "cfp":"CFP",
-        "cfp-text":"Coming soon...",
-        "contact-us":"Contact us",
-        "news":"Keep up to date !",
-        "Je suis intéressé(e)":"I am interested",
-        "conf-text":"2 days of conference with the best local speakers and awesome participants from other places !",
-        "workshop-text":"Original hands-on workshop on the latest technology and methodologies",
-        "party-text":"At the end of the first day, join us at the beach to celebrate the beginning of summer with all the Tech community"
+        "Je suis intéressé(e)":"I am interested"
 	}
 }
